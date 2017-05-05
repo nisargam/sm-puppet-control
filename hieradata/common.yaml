@@ -1,0 +1,17 @@
+---
+profile::base::ntp_servers:
+  - 0.ubunut.pool.ntp.org
+  - 1.ubunut.pool.ntp.org
+  - 2.ubunut.pool.ntp.org
+  - 3.ubunut.pool.ntp.org
+profile::apache::default_vhost: false
+profile::apache::apache_vhost_servers: {
+  'tthomsen1.mylabserver.com': {
+    port: 80,
+    docroot: '/var/www/tthomsen1'
+  },
+  'tthomsen1b.mylabserver.com': {
+    port: 80,
+    docroot: '/var/www/tthomsen1b'
+  }
+}
