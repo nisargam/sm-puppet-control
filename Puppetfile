@@ -31,11 +31,13 @@ mod 'ntp',
 
 mod 'role',
   :git => 'https://github.com/nisargam/sm-puppet-role.git',
-  :ref => 'master'
+  #:ref => 'master'
+  :ref => 'development'
 
 mod 'profile',
   :git => 'git@github.com:nisargam/sm-puppet-profile.git',
-  :ref => 'master'
+  #:ref => 'master'
+  :ref => 'development'
 
 #mod 'nginx',
 #  :git => 'git@github.com:rivethead42/puppet-nginx.git', 
