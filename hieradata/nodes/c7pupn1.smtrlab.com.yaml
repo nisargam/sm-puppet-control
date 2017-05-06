@@ -1,0 +1,13 @@
+---
+profile::apache::apache_vhost_servers: {
+ 'c7pupn1.smtrlab.com': {
+  port: 80,
+  docroot: '/var/www/c7pupn1'
+  },
+
+'c7pupn1b.smtrlab.com': {
+  port: 80,
+  docroot: '/var/www/c7pupn1b'
+  }
+}
+
