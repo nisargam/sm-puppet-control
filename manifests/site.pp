@@ -54,9 +54,9 @@ node default {
 #include ntp
 #class { 'java': }
 #  notify { "This is my default node title-----": }
-# notify { "test_top_scope":
+ notify { "test_top_scope":
 
-# message => "This is a top scope var: ${test_top_scope}"
+ message => "This is a top scope var: ${test_top_scope} in DEFAULT node"
 
   }
   # This is where you can declare classes for all nodes.
