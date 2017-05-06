@@ -30,7 +30,7 @@ mod 'ntp',
   :ref => 'master'
 
 mod 'role',
-  :git => 'https://github.com/nisargam/sm-puppet-role.gitt',
+  :git => 'https://github.com/nisargam/sm-puppet-role.git',
   :ref => 'master'
 
 mod 'profile',
