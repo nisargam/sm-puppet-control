@@ -1,13 +1,20 @@
 ---
-profile::nginx::vhosts: {
+profile::nginx::vhosts: 
   - 'fqdn': 'c7pupn1.smtrlab.com'
-    'port': '80'
+    'port': 80
     'server_aliases': ''
   - 'fqdn': 'c7pupn1b.smtrlab.com'
-    'port': '80'
-    'server_aliases': ''
+    'port': 80
+    'server_aliases': 'c7pupn1b2.smtrlab.com'
 
-}
+#profile::nginx::vhosts: {
+#  - 'fqdn': 'c7pupn1.smtrlab.com'
+#    'port': '80'
+#    'server_aliases': ''
+#  - 'fqdn': 'c7pupn1b.smtrlab.com'
+#    'port': '80'
+#    'server_aliases': ''
+#}
 
 profile::apache::apache_vhost_servers: {
  'c7pupn1.smtrlab.com': {
