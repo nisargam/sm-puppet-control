@@ -39,6 +39,6 @@ mod 'profile',
   :ref => 'master'
   #:ref => 'development'
 
-#mod 'nginx',
-#  :git => 'git@github.com:rivethead42/puppet-nginx.git', 
-#  :ref => 'master'
+mod 'nginx',
+  :git => 'git@github.com:nisargam/sm-puppet-nginx.git', 
+  :ref => 'master'
