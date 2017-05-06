@@ -29,11 +29,14 @@ $test_top_scope = "Top Scope"
 node 'ubt14pupn1.smtrlab' {
   #include ntp
   #include ntp
+  #class { 'ntp': }
+  notify { "This mathces the node name as ubt14pupn1.smtrlab **********": }
+}
+node /^ubt14pupn1/ {
+  #include ntp
   #include ntp
   #class { 'ntp': }
-
-  notify { "This mathces the node name **********": }
-
+  notify { "This mathces the node name regex as /^ubt14pupn1/**********": }
 }
 
 node /^c7pupn1/ {
