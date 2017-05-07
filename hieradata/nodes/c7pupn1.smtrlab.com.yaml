@@ -7,7 +7,7 @@ profile::nginx::vhosts:
     'port': 80
     'server_aliases': 'c7pupn1b2.smtrlab.com'
 classes:
- - profile:nginx
+  - profile::nginx
 #profile::nginx::vhosts: {
 #  - 'fqdn': 'c7pupn1.smtrlab.com'
 #    'port': '80'
