@@ -38,12 +38,19 @@ node /^ubt14pupn1/ {
   #class { 'ntp': }
   notify { "This mathces the node name regex as /^ubt14pupn1/**********": }
 }
-
+node 'c7pupn1.smtrlab.com' {
+  notify { 'test-msg-c7pupn1':
+    
+    message => "This is a node defination using node name c7pupn1.smtrlab.com !!!!!!!!" } 
+}
 node /^c7pupn1/ {
-  notify { "This is a node defination using regex!!!!!!!!!!!!!!!!!": }
+  notify { 'test-msg1-c7pupn1':
+    
+    message => "This is a node defination using regex ^c7pupn1 !!!!!!!!!!!" }
 }
 node /^c6pupn1/ {
-  notify { "This is a is ---centos 6 node scope-- node defination ": }
+  notify { 'test-msg-c6pupn1':
+    message => "This is a is ---centos 6 node scope-- node defination " }
 }
 
 node 'c7pupmaster1.smtrlab.com' {
