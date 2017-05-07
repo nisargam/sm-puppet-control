@@ -59,6 +59,7 @@ node 'c7pupmaster1.smtrlab.com' {
 }
 
 node default {
+  hiera_include('classes')
   #  $test_top_scope = "This is node  Scope"
   #$node_scope_var = "this is a node scope"
 #include ntp
